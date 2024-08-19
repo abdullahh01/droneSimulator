@@ -1,0 +1,48 @@
+{
+  "name": "fyp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.6",
+    "@tensorflow-models/handpose": "^0.1.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.20.0",
+    "antd": "^5.16.5",
+    "axios": "^1.7.3",
+    "bootstrap": "^5.3.3",
+    "cannon": "^0.6.2",
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "firebase": "^10.11.1",
+    "fs": "^0.0.1-security",
+    "gltf-loader": "^1.0.0",
+    "node-hid": "^2.1.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.3",
+    "react-router-dom": "^6.23.0",
+    "react-webcam": "^7.2.0",
+    "socket.io-client": "^4.7.5",
+    "three": "^0.154.0",
+    "three-gltf-loader": "^1.111.0",
+    "usb": "^2.9.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}

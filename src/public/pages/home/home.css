@@ -1,0 +1,216 @@
+html {
+  scroll-behavior: smooth;
+}
+body,
+html {
+  overflow: auto; /* Prevents scrolling */
+}
+#homeNavbar {
+  background: rgba(45, 153, 189, 0.539);
+  margin: 0;
+  padding: 10px 0;
+  font-family: monospace;
+}
+
+#homeNavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#logoName {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+#logoName:hover {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+#logoName img {
+  margin-right: 10px;
+}
+
+#navLinks {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+#navLinks a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3rem;
+  box-shadow: inset 0 0 0 0 #0f4590;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#navLinks a:hover {
+  color: #fff;
+  font-size: 1.4rem;
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  /* box-shadow: outset 100px 0 0 0 #43a1be; */
+  /* border-radius: 40px; */
+}
+
+#signoutDropdown {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  #homeNavbarContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navLinks {
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  #navLinks a {
+    margin: 7px 0;
+    font-size: 0.9rem;
+  }
+
+  #signoutDropdown {
+    margin-top: 10px;
+  }
+}
+
+.section {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4f4f4; /* Slightly different background color for sections  */
+}
+.section > div {
+  background: rgb(221, 218, 218);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 10px 10px 22px 8px rgba(67, 65, 65, 0.75);
+  padding: 70px;
+  max-width: 1500px;
+  max-height: 700px;
+  height: 100%;
+  width: 100%;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.section p {
+  font-size: 1.3rem;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.section li {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+#aboutUs p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+div > button {
+  color: #fff;
+  background: #0e3588;
+  border-radius: 40px;
+  transition: background 0.3s;
+  text-decoration: none;
+  /* padding: 10px 20px; */
+  border: #fff;
+  box-shadow: 4px 4px 8px rgba(5, 5, 5, 0.421);
+}
+div > button:hover {
+  background-color: #fff; /* change to your desired color */
+  color: #0e3588; /* change to your desired color */
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 20px 10px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h2 {
+    font-size: 1.2rem;
+  }
+
+  .section p {
+    font-size: 0.8rem;
+  }
+}
+.section div #button{
+  height: 200px;
+  display: flex;
+  align-items:end;
+  justify-content: center;
+}
+#routingBtn {
+  width: 100%;
+  height: 60px;
+  font-size: 1.5em;
+  font-family: monospace;
+}
+#routingLinks {
+  text-decoration: none;
+}
+
+#feedbackDiv{
+  background-color: rgba(73, 129, 146, 0.689);
+  display: flex;
+  flex-direction: column;
+}
+
+#withKeys #keyboardDiv{
+  background: url("../../../assets/keyboard2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#withJoystick #joystickDiv{
+  background: url("../../../assets/joystick3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#withGestures #gestureDiv{
+  background: url("../../../assets/gesture2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#aboutUs #aboutUsDiv{
+  background-image: url("../../../assets/message.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-blend-mode: lighten; */
+  color: white;
+  background-position: center;
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,25,119,1) 35%, rgba(0,212,255,1) 100%);
+    color: #333;
+    overflow: hidden;
+}
+.dot{
+    height: 100px;
+    width: 100px;
+    background-color: #151a69;
+    border-radius: 50%;
+    display: block;
+    margin-top: 400px;
+}
+.dot1{
+    height: 80px;
+    width: 80px;
+    background-color: #b1b3c4;
+    border-radius: 50%;
+    display: block;
+}
+
+.typewriter{
+    width:60vw;
+    text-align: left;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite,
+      cursor-vanish 0s 2.2s forwards; /* Makes the cursor disappear at the end */
+    }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+  /* The cursor vanishing effect */
+@keyframes cursor-vanish {
+    from { border-color: orange; }
+    to { border-color: transparent; }
+}
+.container {
+    width: 98vw;
+    overflow: hidden;
+    text-align: left;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3em;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.9em;
+    color: #fff;
+    font-family: monospace;
+}
+
+.hero .buttons {
+    margin: 20px 0;
+}
+
+.hero .btn {
+    display: inline-block;
+    color: #fff;
+    background: #0e3588;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 40px;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #fff;
+    color: #0e3588;
+}
+
+.hero .image {
+    width: 38vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center the image vertically */
+    padding-right: 20px; /* Add some spacing from the right edge */
+    animation: slide-in 2s ease-out; /* Add the animation here */
+}
+
+.hero .image img {
+    height: 450px;
+    width: 450px;
+}
+
+.hero .typewriter {
+    z-index: 1; /* Ensure the typewriter text is above the dots */
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-250%) translateY(-50%); /* Start from the left side of the page */
+    }
+    to {
+        transform: translateX(0) translateY(-50%); /* End at its current position */
+    }
+}

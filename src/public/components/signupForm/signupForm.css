@@ -1,0 +1,21 @@
+#signupContainer{
+    text-align: center;
+    height: 100vh;
+    z-index: 0;
+    color: white;
+}
+#signupContainer h1{
+    margin-bottom: 25px;
+}
+#signupContainer #button{
+    width: 100%;
+    background: rgba(130, 197, 219, 0.699);
+}
+#signupContainer a{
+    color: rgba(130, 197, 219, 0.89)!important;
+    text-decoration: none;
+}
+#signupContainer #extraText{
+    color: white !important;
+}
+
